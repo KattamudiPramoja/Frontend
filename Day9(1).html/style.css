@@ -1,0 +1,470 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6%;
+    background-color: white;
+}
+
+.logo {
+    color: slateblue;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    color: gray;
+    font-size: 12px;
+}
+
+.nav-links a:first-child {
+    color: coral;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.login {
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.hero {
+    min-height: 390px;
+    background:
+        linear-gradient(rgba(91, 75, 180, 0.85), rgba(91, 75, 180, 0.85)),
+        url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1500") center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px 7%;
+}
+
+.hero-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hero-content > div:first-child {
+    flex: 1;
+}
+
+.hero-content p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.outline-button {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.search-box {
+    width: 48%;
+    background-color: slateblue;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+.search-box h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.search-box form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-box input {
+    width: calc(50% - 5px);
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.search-box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: white;
+    color: slateblue;
+    font-weight: bold;
+}
+
+.search-box p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    border: 1px solid lavender;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.section {
+    padding: 55px 7%;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.categories {
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.category {
+    text-align: center;
+    width: 95px;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: slateblue;
+    border: 4px solid lavender;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    box-shadow: 0 5px 12px lavender;
+}
+
+.category p {
+    font-size: 12px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    gap: 15px;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.intro img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.intro-text {
+    background-color: turquoise;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text h2 {
+    text-align: left;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.intro-text .outline-button {
+    align-self: flex-start;
+}
+
+.featured {
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.job-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.job-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    margin-bottom: 12px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 22px lavender;
+}
+
+.company-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.google {
+    color: royalblue;
+}
+
+.apple {
+    color: black;
+}
+
+.meta {
+    color: royalblue;
+}
+
+.microsoft {
+    color: coral;
+}
+
+.designer {
+    color: olivedrab;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-info h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.job-info p {
+    font-size: 11px;
+    color: gray;
+}
+
+.job-type {
+    background-color: lavender;
+    color: slateblue;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.job-row button,
+.card-content button,
+.more-jobs button {
+    background-color: coral;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 11px;
+}
+
+.pagination {
+    text-align: center;
+    color: slateblue;
+    margin-top: 25px;
+}
+
+.help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.help-text {
+    background-color: slateblue;
+    color: white;
+    padding: 35px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help-text h2 {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.help-text > p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.numbers {
+    display: flex;
+    gap: 35px;
+}
+
+.numbers strong {
+    font-size: 30px;
+}
+
+.numbers p {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.help-image {
+    position: relative;
+    min-height: 300px;
+}
+
+.help-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: coral;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.recent {
+    padding-top: 25px;
+    padding-bottom: 55px;
+}
+
+.recent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.recent-card {
+    background-color: white;
+    box-shadow: 0 5px 20px lavender;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.recent-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.card-content button {
+    margin-top: 5px;
+}
+
+.more-jobs {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.more-jobs button {
+    padding: 13px 24px;
+}
+
+.customers {
+    background-color: aliceblue;
+    padding-top

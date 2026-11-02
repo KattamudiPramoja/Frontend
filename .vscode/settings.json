@@ -1,0 +1,5 @@
+{
+    "github.copilot.chat.localIndex.enabled": true,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "editor.inlayHints.padding": true
+}
